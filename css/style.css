@@ -1,0 +1,140 @@
+/* 
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Manrope', sans-serif;
+*/
+
+/* ==================== */
+/* ====== RESET ======= */
+/* ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.2;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Reusable Components */
+
+.section-pad {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+.section-bg {
+    background-color: #151515;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.footer-bt-bg {
+    background-color: #151515;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-top: 1px solid #717171;
+}
+
+.card-bg {
+    background-color: #0D0D0D;
+    border: 0.1rem solid #434343;
+    max-width: 26rem;
+    height: 33rem;
+    margin: 0 auto;
+}
+
+.card-bg2 {
+    background-color: #0D0D0D;
+    max-width: 26rem;
+    margin: 0 auto;
+}
+
+.text-color1 {
+    color: #B3B3B3;
+}
+
+.text-color2 {
+    color: #888888;
+}
+
+.text-color3 {
+    color: #AFAFAF;
+}
+
+.text-color4 {
+    color: #FF5E19;
+}
+
+
+.btn-select:link,
+.btn-select:visited,
+.btn-select {
+    background-color: #015196;
+    color: #fff;
+    width: 80%;
+    font-size: 1.5rem;
+    border-radius: 0;
+    border: 0;
+    padding: .5rem 0;
+}
+
+.btn-select:hover {
+    background-color: #A2A9AF;
+    color: #fff;
+}
+
+button:disabled {
+    background-color: #A2A9AF;
+    color: #fff;
+}
+
+.budget-input-boxs {
+    background-color: #0D0D0D;
+    border: 0.1rem solid #fff;
+    color: #fff;
+    padding: .7rem .5rem;
+    width: 10rem;
+}
+
+/* Start Header Section Design */
+.header-section .container {
+    height: 45vh;
+}
+
+.header-section .header-right {
+    position: relative;
+}
+
+.header-section .header-right img {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+}
+
+.header-section .header-middile h1 {
+    font-size: 7rem;
+    font-family: 'Berkshire Swash', cursive;
+    color: #FF5E19;
+    margin-top: 10rem;
+}
+
+.header-section .header-left {
+    position: relative;
+}
+
+.header-section .header-left img:nth-child(2) {
+    position: absolute;
+    top: 5.7rem;
+    right: 0;
+}

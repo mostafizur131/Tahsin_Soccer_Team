@@ -1,0 +1,92 @@
+@media only screen and (max-width : 1200px) {
+
+    .header-section .container {
+        height: 50vh;
+    }
+
+    .header-section .header-right img {
+        top: 7.5rem;
+    }
+
+    .header-section .header-middile h1 {
+        font-size: 6rem;
+
+    }
+
+    .header-section .header-left img:nth-child(2) {
+        top: 8.5rem;
+    }
+
+}
+
+@media only screen and (max-width : 992px) {
+
+
+    .header-section .header-right img {
+        top: 18.5rem;
+    }
+
+    .header-section .header-middile h1 {
+        font-size: 4.5rem;
+        margin-top: 15rem;
+
+    }
+
+    .header-section .header-left img:nth-child(2) {
+        top: 14.5rem;
+    }
+
+}
+
+@media only screen and (max-width : 768px) {
+
+
+    .header-section .header-middile h1 {
+        font-size: 4.5rem;
+        margin-top: 12rem;
+
+    }
+
+
+    .card-bg {
+
+        max-width: 30rem;
+        max-height: 40rem;
+
+    }
+
+    .card-bg2 {
+        max-width: 30rem;
+        max-height: 40rem;
+
+    }
+
+}
+
+@media only screen and (max-width : 576px) {
+
+    .header-section .header-middile h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+
+    }
+
+    .header-section .header-middile img {
+        width: 50%;
+    }
+
+    .header-section .header-middile p {
+        font-size: 1.3rem !important;
+    }
+
+    .header-section .header-left img:nth-child(1) {
+        width: 13rem;
+        text-align: center;
+    }
+
+    .header-section .header-left img:nth-child(2) {
+        top: 6rem;
+        width: 15rem;
+    }
+
+}
