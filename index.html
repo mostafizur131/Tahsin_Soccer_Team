@@ -59,7 +59,7 @@
         <div class="container section-bg">
             <div class="row px-5 gy-5">
                 <div class="col-12 col-lg-9">
-                    <div class="row gy-5">
+                    <div class="row gy-5" id="playersDiv">
 
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card-bg text-center">
@@ -67,7 +67,7 @@
                                 <div class="card-body mb-4">
                                     <h5 class="fs-3 text-white mt-4 get-name">Lionel Messi</h5>
                                     <p class="fs-4 text-color1">36 Goals . 120 Assist</p>
-                                    <button class="btn-select" onclick="selectPlayer(this)">SELECT</button>
+                                    <button class="btn-select player" >SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                                 <div class="card-body mb-4">
                                     <h5 class="fs-3 text-white mt-4">Neymar Jr</h5>
                                     <p class="fs-4 text-color1">36 Goals . 120 Assist</p>
-                                    <button class="btn-select" onclick="selectPlayer(this)">SELECT</button>
+                                    <button class="btn-select player" >SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +89,7 @@
                                 <div class="card-body mb-4">
                                     <h5 class="fs-3 text-white mt-4">Kylian Mbappé</h5>
                                     <p class="fs-4 text-color1">36 Goals . 120 Assist</p>
-                                    <button class="btn-select" onclick="selectPlayer(this)">SELECT</button>
+                                    <button class="btn-select player" >SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                                 <div class="card-body mb-4">
                                     <h5 class="fs-3 text-white mt-4">Vítor Machado</h5>
                                     <p class="fs-4 text-color1">36 Goals . 120 Assist</p>
-                                    <button class="btn-select" onclick="selectPlayer(this)">SELECT</button>
+                                    <button class="btn-select player" >SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                                 <div class="card-body mb-4">
                                     <h5 class="fs-3 text-white mt-4">Sergio Ramos</h5>
                                     <p class="fs-4 text-color1">36 Goals . 120 Assist</p>
-                                    <button class="btn-select" onclick="selectPlayer(this)">SELECT</button>
+                                    <button class="btn-select player" >SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                                 <div class="card-body mb-4">
                                     <h5 class="fs-3 text-white mt-4">Renato Sanches</h5>
                                     <p class="fs-4 text-color1">36 Goals . 120 Assist</p>
-                                    <button class="btn-select" onclick="selectPlayer(this)">SELECT</button>
+                                    <button class="btn-select player" >SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                                 <div class="card-body mb-4">
                                     <h5 class="fs-3 text-white mt-4">Di María</h5>
                                     <p class="fs-4 text-color1">36 Goals . 120 Assist</p>
-                                    <button class="btn-select" onclick="selectPlayer(this)">SELECT</button>
+                                    <button class="btn-select player" >SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                 <div class="card-body mb-4">
                                     <h5 class="fs-3 text-white mt-4">Achraf Hakimi</h5>
                                     <p class="fs-4 text-color1">36 Goals . 120 Assist</p>
-                                    <button class="btn-select" onclick="selectPlayer(this)">SELECT</button>
+                                    <button class="btn-select player" >SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +155,7 @@
                                 <div class="card-body mb-4">
                                     <h5 class="fs-3 text-white mt-4">Mauro Icardi</h5>
                                     <p class="fs-4 text-color1">36 Goals . 120 Assist</p>
-                                    <button class="btn-select" onclick="selectPlayer(this)">SELECT</button>
+                                    <button class="btn-select player" >SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -172,19 +172,19 @@
                                 </div>
 
                                 <div class="select-body pb-3">
-                                    <ul id="place-child-element">
+                                    <ol id="place-child-element">
                                         <!-- <li class="text-color2 fs-3 mb-4">1. <span class="text-white"> Lionel Messi</span></li>
                                         <li class="text-color2 fs-3 mb-4">2. <span class="text-white"> Kylian Mbappé</span></li>
                                         <li class="text-color2 fs-3 mb-4">3. <span class="text-white"> Neymar Jr</span></li>
                                         <li class="text-color2 fs-3 mb-4">4. <span class="text-white"> Renato Sanches</span></li>
                                         <li class="text-color2 fs-3">5. <span class="text-white"> Keylor Navas</span></li> -->
-                                    </ul>
+                                    </ol>
                                 </div>
 
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-12 text-center">
-                            <div class="card-bg2 px-3">
+                            <div id="budgetDiv" class="card-bg2 px-3">
                                 <div class="select-header text-center py-5">
                                     <h2 class="fs-1 text-white">Budget</h2>
                                     <img src="./images/red-line.png" alt="red-line">
@@ -192,7 +192,7 @@
 
                                 <div class="d-flex justify-content-between align-items-center mb-4">
                                     <p class="text-color3 fs-5">Per Player</p>
-                                    <input type="text" class="budget-input-boxs" id="plyer-budget">
+                                    <input type="text" class="budget-input-boxs fInput" id="plyer-budget">
                                 </div>
 
 
@@ -200,7 +200,7 @@
 
                                 <div class="d-flex justify-content-between align-items-center mb-4">
                                     <p class="text-color3 fs-5">Player Expenses</p>
-                                    <p class="text-white fs-5">$<span id="plyer-expenses"> 00</span></p>
+                                    <p class="text-white fs-5">$<span id="plyer-expenses">00</span></p>
                                 </div>
 
                                 <div class="d-flex justify-content-between align-items-center mb-4">
@@ -217,7 +217,7 @@
 
                                 <div class="d-flex justify-content-between align-items-center pb-5">
                                     <p class="text-color3 fs-5">Total</p>
-                                    <p class="fs-5 text-color4">$<span id="set-total"> 00</span></p>
+                                    <p class="fs-5 text-color4">$<span id="set-total">00</span></p>
                                 </div>
 
                                 <!-- <button class="btn-select mb-4" id="total-calculate" onclick="window.location.reload();">Reset</button> -->
